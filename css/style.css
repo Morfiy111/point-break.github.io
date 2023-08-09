@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url('../webfonts/Roboto-Regular.ttf'),
-        url('../webfonts/Roboto-Bold.ttf'),
-        url('../webfonts/Roboto-Italic.ttf');
+    font-family: 'FuturaPT';
+    src: url('../webfonts/FuturaPT-Medium.ttf'),
+        url('../webfonts/FuturaPT-Bold.ttf');
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'FuturaPT', sans-serif;
+    color: #333;
 }
 
 a {
@@ -16,8 +16,8 @@ a {
 }
 
 a:hover {
-    border-bottom: 1px solid #da2508;
-    color: #da2508;
+    border-bottom: 1px solid #51ffff;
+    color: #51ffff;
 }
 
 a,
@@ -28,6 +28,11 @@ button {
 a:focus,
 a:hover {
     text-decoration: none;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: #333;
 }
 
 .header-logo img {
@@ -126,11 +131,6 @@ button.btn-close {
     border-bottom: 1px solid transparent;
 }
 
-.dropdown-item:focus,
-.dropdown-item:hover {
-    background-color: #182a69;
-}
-
 .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
@@ -160,6 +160,64 @@ button.btn-close {
     color: #182a69;
     display: block;
     margin-bottom: 10px;
+}
+
+.page-btn-green {
+    color: #fff;
+    border: 2px solid #51ffff;
+    background-color: #51ffff;
+    line-height: initial;
+}
+
+.title-page-item {
+    margin-bottom: 40px;
+}
+
+.main-catalog-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.main-catalog-item {
+    width: 32%;
+}
+
+.main-catalog-img img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main-catalog-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.main-catalog-desk {
+    height: 191px;
+    overflow: hidden;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to bottom, #000, #000, rgba(0, 0, 0, 0));
+    margin-bottom: 20px;
+}
+
+.main-catalog-desk ul {
+    padding-left: 20px;
+}
+
+.main-catalog-desk li {
+    padding-left: 10px;
+}
+
+.main-catalog-desk li a {
+    position: relative;
+}
+
+.main-catalog-desk li::marker {
+    content: '\f058';
+    font-family: "Font Awesome 6 Free";
 }
 
 @media(max-width:1199px) {
