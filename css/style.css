@@ -188,6 +188,10 @@ button.btn-close {
     transition: all .3s linear;
 }
 
+.main-catalog-item {
+    box-shadow: 5px 6px 32px -12px #333;
+}
+
 .main-catalog-item:hover {
     box-shadow: 0px 2px 64px -13px #333;
 }
@@ -200,7 +204,7 @@ button.btn-close {
 .main-catalog-list {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 .main-catalog-desk {
@@ -232,6 +236,41 @@ button.btn-close {
 
 .main-catalog-btn {
     padding: 15px;
+}
+
+.blue-block {
+    padding: 40px 0;
+    border-top: 2px solid #51ffff;
+    border-bottom: 2px solid #51ffff;
+    margin-bottom: 60px;
+}
+
+.flex-advantages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.flex-advantages-item {
+    width: 32%;
+}
+
+.flex-advantages-item img {
+    width: 100%;
+}
+
+.flex-advantages-item-block {
+    padding: 20px 0;
+}
+
+.flex-advantages-item-block i {
+    color: #51ffff;
+    font-size: 28px;
+}
+
+.title-page-item {
+    font-size: 3rem;
 }
 
 @media(max-width:1199px) {
