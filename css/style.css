@@ -169,6 +169,10 @@ button.btn-close {
     line-height: initial;
 }
 
+.page-btn-green:hover {
+    border: 2px solid #51ffff;
+}
+
 .title-page-item {
     margin-bottom: 40px;
 }
@@ -176,10 +180,16 @@ button.btn-close {
 .main-catalog-title {
     font-size: 28px;
     margin-bottom: 20px;
+    padding: 10px 15px;
 }
 
 .main-catalog-item {
     width: 32%;
+    transition: all .3s linear;
+}
+
+.main-catalog-item:hover {
+    box-shadow: 0px 2px 64px -13px #333;
 }
 
 .main-catalog-img img {
@@ -204,7 +214,7 @@ button.btn-close {
 }
 
 .main-catalog-desk ul {
-    padding-left: 20px;
+    padding: 0 10px 0 30px;
 }
 
 .main-catalog-desk li {
@@ -218,6 +228,10 @@ button.btn-close {
 .main-catalog-desk li::marker {
     content: '\f058';
     font-family: "Font Awesome 6 Free";
+}
+
+.main-catalog-btn {
+    padding: 15px;
 }
 
 @media(max-width:1199px) {
