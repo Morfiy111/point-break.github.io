@@ -144,7 +144,7 @@ button.btn-close {
 
 
 .footer-page {
-    background-color: #efefef;
+    background-color: #51ffff;
     padding: 40px 0;
     margin-top: 50px;
 }
@@ -157,9 +157,22 @@ button.btn-close {
 }
 
 .footer-flex-block a {
-    color: #182a69;
+    color: #333;
     display: block;
     margin-bottom: 10px;
+    border-bottom: 1px solid transparent;
+}
+
+.footer-flex-block a:hover {
+    border-bottom: 1px solid #333
+}
+
+.social-block {
+    display: flex;
+}
+
+.social-block a {
+    margin-right: 10px;
 }
 
 .page-btn-green {
@@ -271,6 +284,51 @@ button.btn-close {
 
 .title-page-item {
     font-size: 3rem;
+}
+
+#button-up {
+    display: none;
+    right: 30px;
+    margin: 0;
+    position: fixed;
+    bottom: 67px;
+    outline: none;
+    color: #3f4049;
+    line-height: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 9;
+}
+
+#button-up::before {
+    font-family: FontAwesome;
+    content: "\f062";
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 8px 10.79px;
+    font-size: 22px;
+}
+
+.subtitle-text {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.main-page-contacts {
+    position: relative;
+}
+
+.contact-block {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.contact-block i {
+    font-size: 22px;
+    margin-right: 10px;
 }
 
 @media(max-width:1199px) {
