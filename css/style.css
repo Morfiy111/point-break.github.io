@@ -331,19 +331,7 @@ button.btn-close {
     margin-right: 10px;
 }
 
-@media(max-width:1199px) {
-    .main-catalog-item {
-        width: 32%;
-    }
-
-    .map-block {
-        width: 50%;
-    }
-
-    .flex-advantages-item img {
-        width: 100%;
-    }
-}
+@media(max-width:1199px) {}
 
 @media(max-width: 991px) {
     .header-phones a {
