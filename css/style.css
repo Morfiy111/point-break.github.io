@@ -323,7 +323,7 @@ button.btn-close {
     top: 10px;
     left: 20px;
     padding: 15px;
-    background-color: #fff;
+    background-color: rgb(100%, 100%, 100%, 0.7);
 }
 
 .contact-block i {
@@ -331,7 +331,15 @@ button.btn-close {
     margin-right: 10px;
 }
 
-@media(max-width:1199px) {}
+.text-center {
+    margin-bottom: 40px;
+}
+
+@media(max-width:1199px) {
+    .flex-advantages {
+        align-items: flex-start;
+    }
+}
 
 @media(max-width: 991px) {
     .header-phones a {
@@ -339,7 +347,8 @@ button.btn-close {
     }
 
     .main-page-contacts {
-        flex-direction: column;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .map-block,
@@ -366,6 +375,39 @@ button.btn-close {
         flex-wrap: wrap;
         justify-content: end;
     }
+
+    .main-catalog-list {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .main-catalog-item {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    .flex-advantages {
+        flex-direction: column;
+    }
+
+    .flex-advantages-item {
+        width: 100%;
+    }
+
+    .flex-advantages-item:nth-child(2) img {
+        width: 50%;
+    }
+
+    .flex-advantages-item:nth-child(2) {
+        text-align: center;
+    }
+
+    .contact-block {
+        position: inherit;
+        top: 0;
+        left: 0;
+        padding: 15px 0;
+    }
 }
 
 @media(max-width: 767px) {
@@ -390,7 +432,7 @@ button.btn-close {
 
     .navbar-expand-md {
         justify-content: end;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: end;
     }
 
@@ -401,15 +443,24 @@ button.btn-close {
     .navbar-toggler {
         border: 2px solid transparent;
     }
-}
 
-@media (max-width: 600px) {
-
-    .header-logo img {
-        width: 120px;
+    .header-row-top-social {
+        margin-bottom: 30px;
     }
 
+    .main-catalog-item {
+        width: 100%;
+    }
+
+    .flex-advantages-item:nth-child(2) img {
+        width: 70%;
+    }
+
+    .footer-flex-block {
+        flex-wrap: wrap;
+    }
 }
+
 
 @media (max-width: 500px) {
     .header-logo {
@@ -418,5 +469,9 @@ button.btn-close {
 
     .dropdown-item {
         white-space: inherit;
+    }
+
+    .flex-advantages-item:nth-child(2) img {
+        width: 100%;
     }
 }
