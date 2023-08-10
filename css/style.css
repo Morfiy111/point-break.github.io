@@ -335,6 +335,10 @@ button.btn-close {
     margin-bottom: 40px;
 }
 
+.owl-feedback-form a:hover {
+    color: #51ffff;
+}
+
 @media(max-width:1199px) {
     .flex-advantages {
         align-items: flex-start;
