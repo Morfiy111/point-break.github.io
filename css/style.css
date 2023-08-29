@@ -199,6 +199,7 @@ button.btn-close {
 .main-catalog-item {
     width: 32%;
     transition: all .3s linear;
+    margin-bottom: 30px;
 }
 
 .main-catalog-item {
@@ -218,6 +219,7 @@ button.btn-close {
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
+    flex-wrap: wrap;
 }
 
 .main-catalog-desk {
