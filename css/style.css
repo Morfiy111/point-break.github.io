@@ -377,6 +377,10 @@ button.btn-close {
     width: 40%;
 }
 
+.video-about-block video {
+    cursor: pointer;
+}
+
 @media(max-width:1199px) {
     .flex-advantages {
         align-items: flex-start;
