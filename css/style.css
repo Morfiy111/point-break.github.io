@@ -341,9 +341,49 @@ button.btn-close {
     color: #51ffff;
 }
 
+.footer-copyright a {
+    color: #333;
+    border-bottom: 1px solid transparent;
+}
+
+.footer-copyright a:hover {
+    border-bottom: 1px solid #333;
+}
+
+.footer-flex-block .header-logo a:hover {
+    border-bottom: 1px solid transparent;
+}
+
+.sub-about-text {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.big-text-heart {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-text-heart i {
+    font-size: 30px;
+    color: #51ffff;
+    margin: 0 15px;
+}
+
+.video-about-block {
+    margin: auto;
+    width: 40%;
+}
+
 @media(max-width:1199px) {
     .flex-advantages {
         align-items: flex-start;
+    }
+
+    .video-about-block {
+        width: 60%;
     }
 }
 
@@ -414,6 +454,10 @@ button.btn-close {
         left: 0;
         padding: 15px 0;
     }
+
+    .video-about-block {
+        width: 80%;
+    }
 }
 
 @media(max-width: 767px) {
@@ -464,6 +508,10 @@ button.btn-close {
 
     .footer-flex-block {
         flex-wrap: wrap;
+    }
+
+    .video-about-block {
+        width: 100%;
     }
 }
 
