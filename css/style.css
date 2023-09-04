@@ -422,7 +422,6 @@ button.btn-close {
 }
 
 .plit_img_big {
-    height: 450px;
     overflow: hidden;
     position: relative;
     list-style: none;
@@ -452,6 +451,14 @@ ul.plit_img_small li img {
 
 .plit_img_small {
     padding-left: 0;
+}
+
+.plit_img_big li {
+    display: none;
+}
+
+.plit_img_big li:first-child {
+    display: list-item;
 }
 
 @media(max-width:1199px) {

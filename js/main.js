@@ -21,11 +21,11 @@ jQuery('.plit_imgs ul.plit_img_small li a').on('click', function () {
     jQuery('.plit_imgs ul.plit_img_big li').hide();
     jQuery('.plit_imgs ul.plit_img_big li.' + jQuery(this).attr('id')).show();
     jQuery('.plit_img_big li a img').each(function () {
-        /*var topact=(567*jQuery(this).height()/jQuery(this).width()-398);
-        if(topact>0)
+        var topact = (567 * jQuery(this).height() / jQuery(this).width() - 398);
+        if (topact > 0)
             jQuery(this).css({
-                'marginTop': '-'+(topact/2)+'px'
-            });*/
+                'marginTop': '-' + (topact / 2) + 'px'
+            });
     });
 
     return false;
