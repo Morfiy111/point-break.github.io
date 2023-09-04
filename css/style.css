@@ -379,6 +379,7 @@ button.btn-close {
 
 .video-about-block video {
     cursor: pointer;
+    width: 100%;
 }
 
 .card-page-block {
